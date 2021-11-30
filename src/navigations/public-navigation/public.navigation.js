@@ -3,7 +3,9 @@ import { createStackNavigator } from '@react-navigation/stack'
 
 import {
     Login,
+    Profile,
     Register,
+    Dashboard,
     NewPassword,
     Introduction,
     ProfileInput,
@@ -27,6 +29,8 @@ const PublicNavigation = () => {
         <Stack.Screen name='ForgetPassword' component={ForgetPassword} />
         <Stack.Screen name='VerifyPassword' component={VerifyPassword} />
         <Stack.Screen name='NewPassword' component={NewPassword} />
+        <Stack.Screen name='Profile' component={Profile} />
+        <Stack.Screen name='Dashboard' component={Dashboard} />
       </Stack.Navigator>
     )
   }

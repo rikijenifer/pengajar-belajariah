@@ -97,7 +97,10 @@ const Login = () => {
               <Buttons 
                 title='Masuk'
                 style={styles.StyleBtnLog}
-                textStyle={styles.StyleTxtBtnLog}  />
+                textStyle={styles.StyleTxtBtnLog}
+                onPress={() => {
+                  navigation.navigate('Dashboard')
+                }}  />
               <View style={styles.nothaveAccount}>
                 <Text style={styles.nothaveAccountText}>
                   Belum punya akun ?
